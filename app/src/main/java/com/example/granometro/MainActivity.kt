@@ -11,6 +11,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
 import com.example.granometro.core_navigation.graph.AppNavGraph
+
 import com.example.granometro.core_ui.GranometroTheme
 
 class MainActivity : ComponentActivity() {
@@ -18,8 +19,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
+            val navController = rememberNavController()
             GranometroTheme {
-                val navController = rememberNavController()
 
                 AppNavGraph(
                     navController = navController,
@@ -43,11 +44,3 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
-//@Preview(showBackground = true)
-//@Composable
-//fun GreetingPreview() {
-//    GranometroTheme {
-//        Greeting("Android")
-//    }
-//}
