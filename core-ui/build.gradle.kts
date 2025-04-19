@@ -39,8 +39,8 @@ dependencies {
     implementation(libs.androidx.ui.graphics.android)
     implementation(libs.androidx.runtime.android)
 
-    //firebase
-    implementation(libs.firebase.components)
+    //fonts
+    implementation(libs.google.fonts)
 
     // Pode manter se for rodar testes
     testImplementation(libs.junit)

@@ -22,3 +22,4 @@ dependencyResolutionManagement {
 rootProject.name = "Granometro"
 include(":app")
 include(":core-ui")
+include(":core-navigation")
