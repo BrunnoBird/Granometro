@@ -60,6 +60,9 @@ dependencies {
     //navigation
     implementation(libs.androidx.navigation.compose)
 
+    //lottie
+    implementation(libs.lottie)
+
     implementation(project(":core-ui"))
     implementation(project(":core-navigation"))
 }
