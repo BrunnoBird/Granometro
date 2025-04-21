@@ -6,6 +6,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.googlefonts.Font
 import androidx.compose.ui.text.googlefonts.GoogleFont
+import androidx.compose.ui.unit.sp
 
 val fontProvider = GoogleFont.Provider(
     providerAuthority = "com.google.android.gms.fonts",
@@ -21,9 +22,29 @@ val ManropeFontFamily = FontFamily(
 )
 
 val Typography = Typography(
-    displayLarge = TextStyle(fontFamily = ManropeFontFamily, fontWeight = FontWeight.Bold),
-    titleLarge = TextStyle(fontFamily = ManropeFontFamily, fontWeight = FontWeight.Bold),
-    bodyLarge = TextStyle(fontFamily = ManropeFontFamily, fontWeight = FontWeight.Normal),
-    bodyMedium = TextStyle(fontFamily = ManropeFontFamily, fontWeight = FontWeight.Normal),
-    labelLarge = TextStyle(fontFamily = ManropeFontFamily, fontWeight = FontWeight.Medium)
+    displayLarge = TextStyle(
+        fontFamily = ManropeFontFamily,
+        fontWeight = FontWeight.Bold,
+        fontSize = 42.sp // Título de tela, hero text
+    ),
+    titleLarge = TextStyle(
+        fontFamily = ManropeFontFamily,
+        fontWeight = FontWeight.Bold,
+        fontSize = 24.sp // Título de seção ou card
+    ),
+    bodyLarge = TextStyle(
+        fontFamily = ManropeFontFamily,
+        fontWeight = FontWeight.Normal,
+        fontSize = 18.sp // Texto principal para leitura contínua
+    ),
+    bodyMedium = TextStyle(
+        fontFamily = ManropeFontFamily,
+        fontWeight = FontWeight.Normal,
+        fontSize = 16.sp // Texto secundário, descrição
+    ),
+    labelLarge = TextStyle(
+        fontFamily = ManropeFontFamily,
+        fontWeight = FontWeight.Medium,
+        fontSize = 14.sp // Botões, labels, pequenos textos
+    )
 )

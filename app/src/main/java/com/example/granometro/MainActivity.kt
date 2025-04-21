@@ -9,7 +9,7 @@ import com.example.granometro.core_navigation.graph.AppNavGraph
 import com.example.granometro.core_navigation.route.NavigationDestinations
 import com.example.granometro.core_navigation.util.navigateSingleTop
 import com.example.granometro.core_ui.GranometroTheme
-import com.example.granometro.presentation.screens.HomeScreen
+import com.example.granometro.presentation.screens.home.HomeScreen
 import com.example.granometro.presentation.screens.SplashScreen
 
 class MainActivity : ComponentActivity() {

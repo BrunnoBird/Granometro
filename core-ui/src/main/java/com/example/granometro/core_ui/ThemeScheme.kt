@@ -18,8 +18,7 @@ internal  val LightColorScheme = lightColorScheme(
     onPrimary = LightOnPrimary,
     background = LightBackground,
     onBackground = LightOnBackground,
-    error = LightError
-    // warning/positive não são nativos, mas podem ser usados como extensão
+    error = LightError,
 )
 
 internal val DarkColorScheme = darkColorScheme(
@@ -27,5 +26,5 @@ internal val DarkColorScheme = darkColorScheme(
     onPrimary = DarkOnPrimary,
     background = DarkBackground,
     onBackground = DarkOnBackground,
-    error = DarkError
+    error = DarkError,
 )
